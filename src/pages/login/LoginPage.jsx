@@ -35,7 +35,7 @@ function LoginPage() {
       await dispatch(loginUser(payload));
 
       if (userInfo.isAuthenticated) {
-        navigate("/university-information");
+        navigate("/university-information/");
       } else {
         setEmailLogin("");
         setPasswordLogin("");
@@ -68,7 +68,7 @@ function LoginPage() {
   const handleLogout = (e) => {
     e.preventDefault();
     dispatch(logoutUser());
-    navigate("/university-information");
+    navigate("/university-information/");
   };
 
   const errorMessage = userInfo?.error || "";

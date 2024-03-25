@@ -22,7 +22,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/university-information" element={<SharedLayout />}>
+        <Route path="/university-information/" element={<SharedLayout />}>
           <Route path="login" element={<LoginPage />} />
           <Route index element={<UniversitiesPage />}></Route>
           <Route path="faculties" element={<FacultiesPage />} />
