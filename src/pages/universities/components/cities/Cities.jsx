@@ -106,7 +106,7 @@ const Cities = () => {
 
       {isAddFormVisible && <AddCitiesForm onFormSubmit={handleAddItem} />}
 
-      {error.length > 0 && <ErrorAlert errors={error} />}
+      {error && error.length > 0 && <ErrorAlert errors={error} />}
 
       <div className={"mt-16"}>
         <Button action={() => setIsAddFormVisible(true)}>Add City</Button>
